@@ -1,0 +1,34 @@
+{
+  "name": "shelly-models",
+  "packageManager": "yarn@4.5.3",
+  "version": "0.1.0",
+  "description": "A modern TypeScript package.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'",
+    "prepare": "yarn build",
+    "publish": "yarn build && yarn lint && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianlandgraf/shelly-models.git"
+  },
+  "author": "Sebastian Landgraf",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.x.x",
+    "@typescript-eslint/parser": "^6.x.x",
+    "eslint": "^8.x.x",
+    "jest": "^29.x.x",
+    "prettier": "^3.x.x",
+    "ts-jest": "^29.x.x",
+    "typescript": "^5.x.x"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
