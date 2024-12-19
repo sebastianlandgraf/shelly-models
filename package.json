@@ -5,6 +5,7 @@
   "description": "A modern TypeScript package.",
   "type": "module",
   "scripts": {
+    "local": "husky add .husky/pre-commit add .husky/commit-msg ",
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts'",
     "format": "prettier --write 'src/**/*.ts'",
