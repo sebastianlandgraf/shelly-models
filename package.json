@@ -8,7 +8,8 @@
     "build": "tsc",
     "lint": "eslint 'src/**/*.ts'",
     "format": "prettier --write 'src/**/*.ts'",
-    "prepare": "yarn build"
+    "prepare": "yarn build",
+    "publish": "semantic-release"
   },
   "repository": {
     "type": "git",
