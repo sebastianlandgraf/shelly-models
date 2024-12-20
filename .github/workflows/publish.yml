@@ -31,6 +31,7 @@ jobs:
           node-version: "22"
           cache: "yarn"
           registry-url: "https://npm.pkg.github.com/"
+          scope: "@sebastianlandgraf"
 
       - name: Install Dependencies
         run: yarn install
