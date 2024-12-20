@@ -1353,6 +1353,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sebastianlandgraf/shelly-models@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@sebastianlandgraf/shelly-models@workspace:."
+  dependencies:
+    "@commitlint/cli": "npm:^19.5.0"
+    "@commitlint/config-conventional": "npm:^19.5.0"
+    "@semantic-release/git": "npm:^10.0.1"
+    "@typescript-eslint/eslint-plugin": "npm:^6.x.x"
+    "@typescript-eslint/parser": "npm:^6.x.x"
+    eslint: "npm:^8.x.x"
+    husky: "npm:^9.1.6"
+    jest: "npm:^29.x.x"
+    prettier: "npm:^3.x.x"
+    semantic-release: "npm:^24.1.2"
+    ts-jest: "npm:^29.x.x"
+    typescript: "npm:^5.x.x"
+  languageName: unknown
+  linkType: soft
+
 "@sec-ant/readable-stream@npm:^0.4.1":
   version: 0.4.1
   resolution: "@sec-ant/readable-stream@npm:0.4.1"
@@ -6730,25 +6749,6 @@ __metadata:
   checksum: 10c0/1dbed0726dd0e1152a92696c76c7f06084eb32a90f0528d11acd764043aacf76994b2fb30aa1291a21bd019d6699164d048286309a278855ee7bec06cf6fb690
   languageName: node
   linkType: hard
-
-"shelly-models@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "shelly-models@workspace:."
-  dependencies:
-    "@commitlint/cli": "npm:^19.5.0"
-    "@commitlint/config-conventional": "npm:^19.5.0"
-    "@semantic-release/git": "npm:^10.0.1"
-    "@typescript-eslint/eslint-plugin": "npm:^6.x.x"
-    "@typescript-eslint/parser": "npm:^6.x.x"
-    eslint: "npm:^8.x.x"
-    husky: "npm:^9.1.6"
-    jest: "npm:^29.x.x"
-    prettier: "npm:^3.x.x"
-    semantic-release: "npm:^24.1.2"
-    ts-jest: "npm:^29.x.x"
-    typescript: "npm:^5.x.x"
-  languageName: unknown
-  linkType: soft
 
 "signal-exit@npm:^3.0.3, signal-exit@npm:^3.0.7":
   version: 3.0.7
