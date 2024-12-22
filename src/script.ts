@@ -2,7 +2,7 @@ export type ScriptGetConfigResponse = ScriptConfig;
 
 export interface ScriptSetConfigRequest {
   id: number;
-  config: ScriptConfig;
+  config: Partial<ScriptConfig>;
 }
 export interface ScriptConfig {
   id: number;

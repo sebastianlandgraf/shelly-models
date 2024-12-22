@@ -11,7 +11,7 @@ export interface BleConfig {
 }
 
 export interface BleSetConfig {
-  config: BleConfig;
+  config: Partial<BleConfig>;
 }
 
 export interface BleGetStatusResponse {

@@ -44,7 +44,7 @@ interface Ap {
 export type WifiGetConfigResponse = WifiConfig;
 
 export interface WifiSetConfigRequest {
-  config: WifiConfig;
+  config: Partial<WifiConfig>;
 }
 
 export interface WifiGetStatusResponse {

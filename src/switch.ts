@@ -4,7 +4,7 @@ export type SwitchGetConfigResponse = SwitchConfig;
 
 export interface SwitchSetConfigRequest {
   id: number;
-  config: SwitchConfig;
+  config: Partial<SwitchConfig>;
 }
 export interface SwitchConfig {
   id: number;

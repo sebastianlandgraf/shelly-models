@@ -20,7 +20,7 @@ export type CoverGetConfigResponse = CoverConfig;
 
 export interface CoverSetConfigRequest {
   id: number;
-  config: CoverConfig;
+  config: Partial<CoverConfig>;
 }
 
 export interface CoverConfig {

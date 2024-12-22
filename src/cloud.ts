@@ -9,5 +9,5 @@ export interface CloudConfig {
 
 export type CloudGetConfigResponse = CloudConfig;
 export interface CloudSetConfigRequest {
-  config: CloudConfig;
+  config: Partial<CloudConfig>;
 }

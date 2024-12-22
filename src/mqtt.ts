@@ -1,7 +1,7 @@
 export type MqttGetConfigResponse = MqttConfig;
 
 export interface MqttSetConfigRequest {
-  config: MqttConfig;
+  config: Partial<MqttConfig>;
 }
 
 export interface MqttConfig {

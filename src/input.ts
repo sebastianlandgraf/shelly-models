@@ -7,7 +7,7 @@ export type InputGetConfigResponse = InputConfig;
 
 export interface InputSetConfigRequest {
   id: number;
-  config: InputConfig;
+  config: Partial<InputConfig>;
 }
 
 export interface InputConfig {

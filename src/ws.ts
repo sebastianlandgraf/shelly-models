@@ -1,7 +1,7 @@
 export type WsGetConfigResponse = WsConfig;
 
 export interface WsSetConfigRequest {
-  config: WsConfig;
+  config: Partial<WsConfig>;
 }
 
 export interface WsConfig {
