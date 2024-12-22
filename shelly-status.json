@@ -1,0 +1,168 @@
+{
+  "ble": {},
+  "cloud": {
+    "connected": false
+  },
+  "cover:0": {
+    "id": 0,
+    "source": "timeout",
+    "state": "stopped",
+    "apower": 0,
+    "voltage": 229,
+    "current": 0,
+    "pf": 0,
+    "freq": 50,
+    "aenergy": {
+      "total": 168.777,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1734738180
+    },
+    "temperature": {
+      "tC": 53.9,
+      "tF": 129
+    },
+    "pos_control": true,
+    "last_direction": "close",
+    "current_pos": 10
+  },
+  "input:0": {
+    "id": 0,
+    "state": false
+  },
+  "input:1": {
+    "id": 1,
+    "state": false
+  },
+  "mqtt": {
+    "connected": false
+  },
+  "script:1": {
+    "id": 1,
+    "running": true,
+    "mem_used": 574,
+    "mem_peak": 1092,
+    "mem_free": 24612
+  },
+  "script:2": {
+    "id": 2,
+    "running": true,
+    "mem_used": 826,
+    "mem_peak": 2506,
+    "mem_free": 23450
+  },
+  "sys": {
+    "mac": "",
+    "restart_required": false,
+    "time": "",
+    "unixtime": 1734738220,
+    "uptime": 7161,
+    "ram_size": 266324,
+    "ram_free": 103692,
+    "fs_size": 524288,
+    "fs_free": 200704,
+    "cfg_rev": 10,
+    "kvs_rev": 0,
+    "schedule_rev": 0,
+    "webhook_rev": 0,
+    "available_updates": {},
+    "reset_reason": 3
+  },
+  "wifi": {
+    "sta_ip": null,
+    "status": "disconnected",
+    "ssid": null,
+    "rssi": 0,
+    "ap_client_count": 1
+  },
+  "ws": {
+    "connected": false
+  },
+  "switch:0": {
+    "id": 0,
+    "source": "init",
+    "output": false,
+    "temperature": {
+      "tC": 25.7,
+      "tF": 78.2
+    }
+  },
+  "switch:1": {
+    "id": 1,
+    "source": "init",
+    "output": false,
+    "temperature": {
+      "tC": 25.7,
+      "tF": 78.2
+    }
+  },
+  "input:2": {
+    "id": 2,
+    "state": false
+  },
+  "input:3": {
+    "id": 3,
+    "state": null
+  },
+  "bthome": {},
+  "eth": {
+    "ip": ""
+  },
+  "knx": {},
+  "light:0": {
+    "id": 0,
+    "source": "dim",
+    "output": false,
+    "brightness": 28,
+    "temperature": {
+      "tC": 39.3,
+      "tF": 102.7
+    },
+    "aenergy": {
+      "total": 1411.565,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1734738180
+    },
+    "apower": 0,
+    "current": 0,
+    "voltage": 234.4
+  },
+  "light:1": {
+    "id": 1,
+    "source": "dim",
+    "output": false,
+    "brightness": 100,
+    "temperature": {
+      "tC": 46.3,
+      "tF": 115.4
+    },
+    "aenergy": {
+      "total": 386.705,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1734738180
+    },
+    "apower": 0,
+    "current": 0,
+    "voltage": 234.3
+  },
+  "switch:2": {
+    "id": 2,
+    "source": "init",
+    "output": false,
+    "temperature": {
+      "tC": 25.7,
+      "tF": 78.2
+    }
+  }
+}

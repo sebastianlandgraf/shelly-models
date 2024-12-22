@@ -8,6 +8,7 @@ export interface SysDevice {
   eco_mode: boolean;
   profile?: 'cover' | 'switch' | undefined;
   addon_type: string | null;
+  sys_btn_toggle: boolean;
 }
 
 export interface SysGetStatusResponse {

@@ -1,0 +1,273 @@
+{
+  "ble": {
+    "enable": true,
+    "rpc": {
+      "enable": false
+    },
+    "observer": {
+      "enable": true
+    }
+  },
+  "cloud": {
+    "enable": false,
+    "server": ""
+  },
+  "cover:0": {
+    "id": 0,
+    "name": "",
+    "motor": {
+      "idle_power_thr": 2,
+      "idle_confirm_period": 0.25
+    },
+    "maxtime_open": 60,
+    "maxtime_close": 60,
+    "initial_state": "stopped",
+    "invert_directions": false,
+    "in_mode": "dual",
+    "swap_inputs": true,
+    "safety_switch": {
+      "enable": false,
+      "direction": "both",
+      "action": "stop",
+      "allowed_move": null
+    },
+    "power_limit": 200,
+    "voltage_limit": 240,
+    "undervoltage_limit": 0,
+    "current_limit": 1,
+    "obstruction_detection": {
+      "enable": false,
+      "direction": "both",
+      "action": "stop",
+      "power_thr": 171,
+      "holdoff": 1
+    }
+  },
+  "input:0": {
+    "id": 0,
+    "name": null,
+    "type": "switch",
+    "enable": true,
+    "invert": false
+  },
+  "input:1": {
+    "id": 1,
+    "name": null,
+    "type": "switch",
+    "enable": true,
+    "invert": false
+  },
+  "mqtt": {
+    "enable": false,
+    "server": null,
+    "client_id": "",
+    "user": null,
+    "ssl_ca": null,
+    "topic_prefix": "",
+    "rpc_ntf": true,
+    "status_ntf": false,
+    "use_client_cert": false,
+    "enable_rpc": true,
+    "enable_control": true
+  },
+  "script:1": {
+    "id": 1,
+    "name": "",
+    "enable": true
+  },
+  "script:2": {
+    "id": 2,
+    "name": "",
+    "enable": true
+  },
+  "sys": {
+    "device": {
+      "name": null,
+      "mac": "",
+      "fw_id": "",
+      "discoverable": true,
+      "eco_mode": false,
+      "sys_btn_toggle": false
+    },
+    "location": {
+      "tz": "",
+      "lat": 0,
+      "lon": 0
+    },
+    "debug": {
+      "level": 2,
+      "file_level": null,
+      "mqtt": {
+        "enable": false
+      },
+      "websocket": {
+        "enable": false
+      },
+      "udp": {
+        "addr": null
+      }
+    },
+    "ui_data": {},
+    "rpc_udp": {
+      "dst_addr": null,
+      "listen_port": null
+    },
+    "sntp": {
+      "server": ""
+    },
+    "cfg_rev": 10
+  },
+  "wifi": {
+    "ap": {
+      "ssid": "",
+      "is_open": false,
+      "enable": true,
+      "range_extender": {
+        "enable": true
+      }
+    },
+    "sta": {
+      "ssid": null,
+      "is_open": true,
+      "enable": false,
+      "ipv4mode": "dhcp",
+      "ip": null,
+      "netmask": null,
+      "gw": null,
+      "nameserver": null
+    },
+    "sta1": {
+      "ssid": null,
+      "is_open": true,
+      "enable": false,
+      "ipv4mode": "dhcp",
+      "ip": null,
+      "netmask": null,
+      "gw": null,
+      "nameserver": null
+    },
+    "roam": {
+      "rssi_thr": -80,
+      "interval": 60
+    }
+  },
+  "ws": {
+    "enable": false,
+    "server": null,
+    "ssl_ca": "ca.pem"
+  },
+  "switch:0": {
+    "id": 0,
+    "name": null,
+    "in_mode": "follow",
+    "initial_state": "match_input",
+    "auto_on": false,
+    "auto_on_delay": 60,
+    "auto_off": false,
+    "auto_off_delay": 60
+  },
+  "switch:1": {
+    "id": 1,
+    "name": null,
+    "in_mode": "follow",
+    "initial_state": "match_input",
+    "auto_on": false,
+    "auto_on_delay": 60,
+    "auto_off": false,
+    "auto_off_delay": 60
+  },
+  "input:2": {
+    "id": 2,
+    "name": null,
+    "type": "switch",
+    "enable": true,
+    "invert": false
+  },
+  "input:3": {
+    "id": 3,
+    "name": null,
+    "type": "button",
+    "enable": true,
+    "invert": false
+  },
+  "bthome": {},
+  "eth": {
+    "enable": true,
+    "ipv4mode": "static",
+    "ip": "",
+    "netmask": "",
+    "gw": "",
+    "nameserver": ""
+  },
+  "knx": {
+    "enable": false,
+    "ia": "15.15.255",
+    "routing": {
+      "addr": ""
+    }
+  },
+  "light:0": {
+    "id": 0,
+    "name": "",
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60,
+    "auto_off": false,
+    "auto_off_delay": 60,
+    "transition_duration": 3,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": false,
+      "brightness": 50,
+      "active_between": []
+    },
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim",
+    "current_limit": 1.22,
+    "power_limit": 230,
+    "undervoltage_limit": 200,
+    "voltage_limit": 280
+  },
+  "light:1": {
+    "id": 1,
+    "name": "",
+    "initial_state": "restore_last",
+    "auto_on": false,
+    "auto_on_delay": 60,
+    "auto_off": false,
+    "auto_off_delay": 60,
+    "transition_duration": 3,
+    "min_brightness_on_toggle": 3,
+    "night_mode": {
+      "enable": false,
+      "brightness": 50,
+      "active_between": []
+    },
+    "button_fade_rate": 3,
+    "button_presets": {
+      "button_doublepush": {
+        "brightness": 100
+      }
+    },
+    "in_mode": "dim",
+    "current_limit": 1.22,
+    "power_limit": 230,
+    "undervoltage_limit": 200,
+    "voltage_limit": 280
+  },
+  "switch:2": {
+    "id": 2,
+    "name": null,
+    "in_mode": "follow",
+    "initial_state": "match_input",
+    "auto_on": false,
+    "auto_on_delay": 60,
+    "auto_off": false,
+    "auto_off_delay": 60
+  }
+}

@@ -1,7 +1,10 @@
 import { BleGetConfigResponse, BleGetStatusResponse } from './ble.js';
 import { CloudGetConfigResponse, CloudGetStatusResponse } from './cloud.js';
 import { CoverGetConfigResponse, CoverGetStatusResponse } from './cover.js';
+import { EthGetConfigResponse, EthGetStatusResponse } from './eth.js';
 import { InputGetConfigResponse, InputGetStatusResponse } from './input.js';
+import { KnxGetConfigResponse, KnxGetStatusResponse } from './knx.js';
+import { LightGetConfigResponse, LightGetStatusResponse } from './light.js';
 import { MqttGetConfigResponse, MqttGetStatusResponse } from './mqtt.js';
 import { ScriptGetConfigResponse, ScriptGetStatusResponse } from './script.js';
 import { SwitchGetConfigResponse, SwitchGetStatusResponse } from './switch.js';
@@ -11,17 +14,23 @@ import { WsGetConfigResponse, WsGetStatusResponse } from './ws.js';
 
 export interface ShellyGetStatusResponse {
   ble: BleGetStatusResponse;
+  bthome: {
+    errors: { [key: number]: string };
+  };
   cloud: CloudGetStatusResponse;
-  mqtt: MqttGetStatusResponse;
+  eth: EthGetStatusResponse;
   'cover:0'?: CoverGetStatusResponse;
   'input:0'?: InputGetStatusResponse;
   'input:1'?: InputGetStatusResponse;
   'input:2'?: InputGetStatusResponse;
   'input:3'?: InputGetStatusResponse;
+  knx: KnxGetStatusResponse;
+  'light:0'?: LightGetStatusResponse;
+  'light:1'?: LightGetStatusResponse;
+  mqtt: MqttGetStatusResponse;
   'switch:0'?: SwitchGetStatusResponse;
   'switch:1'?: SwitchGetStatusResponse;
   'switch:2'?: SwitchGetStatusResponse;
-  'switch:3'?: SwitchGetStatusResponse;
   'script:0'?: ScriptGetStatusResponse;
   'script:1'?: ScriptGetStatusResponse;
   'script:2'?: ScriptGetStatusResponse;
@@ -58,15 +67,21 @@ export interface ShellyGetDeviceInfoResponse {
 
 export interface ShellyGetConfigResponse {
   ble: BleGetConfigResponse;
+  bthome: KnxGetConfigResponse;
   cloud: CloudGetConfigResponse;
   'cover:0'?: CoverGetConfigResponse;
+  eth: EthGetConfigResponse;
   'input:0'?: InputGetConfigResponse;
   'input:1'?: InputGetConfigResponse;
   'input:2'?: InputGetConfigResponse;
   'input:3'?: InputGetConfigResponse;
+  knx: KnxGetConfigResponse;
+  'light:0'?: LightGetConfigResponse;
+  'light:1'?: LightGetConfigResponse;
   mqtt: MqttGetConfigResponse;
   'switch:0'?: SwitchGetConfigResponse;
   'switch:1'?: SwitchGetConfigResponse;
+  'switch:2'?: SwitchGetConfigResponse;
   'script:1'?: ScriptGetConfigResponse;
   'script:2'?: ScriptGetConfigResponse;
   'script:3'?: ScriptGetConfigResponse;
