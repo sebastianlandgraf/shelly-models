@@ -1,11 +1,11 @@
 export type KnxGetConfigResponse = KnxConfig;
 
 export interface KnxConfig {
-  enable: boolean,
-    ia: string,
-    routing: {
-      addr: string
-    }
+  enable: boolean;
+  ia: string;
+  routing: {
+    addr: string;
+  };
 }
 
 export interface KnxSetConfigRequest {
