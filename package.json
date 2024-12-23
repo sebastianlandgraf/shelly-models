@@ -3,6 +3,8 @@
   "packageManager": "yarn@4.5.3",
   "version": "1.1.0",
   "description": "A modern TypeScript package.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "local": "husky  ",
@@ -11,7 +13,8 @@
     "format": "prettier --write 'src/**/*.ts'",
     "prepare": "yarn build",
     "publish": "semantic-release",
-    "run-once": "tsx ./create_new_models.ts"
+    "run-once": "tsx ./create_new_models.ts",
+    "local-prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,8 +23,8 @@
   "author": "Sebastian Landgraf",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/cli": "^19.x.x",
+    "@commitlint/config-conventional": "^19.x.x",
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^6.x.x",
     "@typescript-eslint/parser": "^6.x.x",
