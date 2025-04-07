@@ -1,6 +1,6 @@
 {
   "ble": {
-    "enable": true,
+    "enable": false,
     "rpc": {
       "enable": false
     },
@@ -41,6 +41,14 @@
       "action": "stop",
       "power_thr": 171,
       "holdoff": 1
+    },
+    "slat": {
+      "enable": false,
+      "open_time": 1.5,
+      "close_time": 1.5,
+      "step": 20,
+      "retain_pos": false,
+      "precise_ctl": false
     }
   },
   "input:0": {
@@ -48,7 +56,8 @@
     "name": null,
     "type": "switch",
     "enable": true,
-    "invert": false
+    "invert": false,
+    "factory_reset": true
   },
   "input:1": {
     "id": 1,
@@ -161,10 +170,15 @@
     "name": null,
     "in_mode": "follow",
     "initial_state": "match_input",
-    "auto_on": false,
-    "auto_on_delay": 60,
+    "auto_on": true,
+    "auto_on_delay": 5,
     "auto_off": false,
-    "auto_off_delay": 60
+    "auto_off_delay": 60,
+    "power_limit": 2240,
+    "voltage_limit": 280,
+    "autorecover_voltage_errors": false,
+    "current_limit": 8,
+    "reverse": false
   },
   "switch:1": {
     "id": 1,
@@ -193,6 +207,7 @@
   "bthome": {},
   "eth": {
     "enable": true,
+    "server_mode": false,
     "ipv4mode": "static",
     "ip": "",
     "netmask": "",
@@ -221,6 +236,10 @@
       "brightness": 50,
       "active_between": []
     },
+    "range_map": [
+      0,
+      100
+    ],
     "button_fade_rate": 3,
     "button_presets": {
       "button_doublepush": {
@@ -248,6 +267,10 @@
       "brightness": 50,
       "active_between": []
     },
+    "range_map": [
+      0,
+      100
+    ],
     "button_fade_rate": 3,
     "button_presets": {
       "button_doublepush": {
@@ -269,5 +292,10 @@
     "auto_on_delay": 60,
     "auto_off": false,
     "auto_off_delay": 60
+  },
+  "pm1:0": {
+    "id": 0,
+    "name": "",
+    "reverse": false
   }
 }

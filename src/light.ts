@@ -36,6 +36,7 @@ interface LightConfig {
   transition_duration: number;
   min_brightness_on_toggle: number;
   night_mode: NightMode;
+  range_map: Array<number>;
   button_fade_rate: number;
   button_presets: ButtonPresets;
   in_mode: string;

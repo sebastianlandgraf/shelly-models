@@ -57,17 +57,20 @@
   "sys": {
     "mac": "",
     "restart_required": false,
-    "time": "",
-    "unixtime": 1734738220,
-    "uptime": 7161,
-    "ram_size": 266324,
-    "ram_free": 103692,
-    "fs_size": 524288,
-    "fs_free": 200704,
+    "time": "23:38",
+    "unixtime": 1744061891,
+    "last_sync_ts": 1744061559,
+    "uptime": 2258,
+    "ram_size": 255552,
+    "ram_free": 136356,
+    "ram_min_free": 119968,
+    "fs_size": 1048576,
+    "fs_free": 602112,
     "cfg_rev": 10,
-    "kvs_rev": 0,
+    "kvs_rev": 12,
     "schedule_rev": 0,
     "webhook_rev": 0,
+    "btrelay_rev": 0,
     "available_updates": {},
     "reset_reason": 3
   },
@@ -84,7 +87,29 @@
   "switch:0": {
     "id": 0,
     "source": "init",
-    "output": false,
+    "output": true,
+    "apower": 0,
+    "voltage": 229.4,
+    "freq": 50.1,
+    "current": 0,
+    "aenergy": {
+      "total": 10140.037,
+      "by_minute": [
+        0,
+        201.886,
+        605.658
+      ],
+      "minute_ts": 1744061880
+    },
+    "ret_aenergy": {
+      "total": 0,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1744061880
+    },
     "temperature": {
       "tC": 25.7,
       "tF": 78.2
@@ -107,7 +132,11 @@
     "id": 3,
     "state": null
   },
-  "bthome": {},
+  "bthome": {
+    "errors": [
+      "bluetooth_disabled"
+    ]
+  },
   "eth": {
     "ip": ""
   },
@@ -161,8 +190,33 @@
     "source": "init",
     "output": false,
     "temperature": {
-      "tC": 25.7,
-      "tF": 78.2
+      "tC": 29,
+      "tF": 84.3
+    }
+  },
+  "pm1:0": {
+    "id": 0,
+    "voltage": 230.9,
+    "current": 0,
+    "apower": 0,
+    "freq": 50,
+    "aenergy": {
+      "total": 24294.788,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1744061880
+    },
+    "ret_aenergy": {
+      "total": 55.113,
+      "by_minute": [
+        0,
+        0,
+        0
+      ],
+      "minute_ts": 1744061880
     }
   }
 }

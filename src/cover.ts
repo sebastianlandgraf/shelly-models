@@ -39,6 +39,16 @@ export interface CoverConfig {
   undervoltage_limit: number;
   current_limit: number;
   obstruction_detection: Obstructiondetection;
+  slat: SlatConfig;
+}
+
+export interface SlatConfig {
+  enable: boolean;
+  open_time: number;
+  close_time: number;
+  step: number;
+  retain_pos: boolean;
+  precise_ctl: boolean;
 }
 
 export interface Obstructiondetection {

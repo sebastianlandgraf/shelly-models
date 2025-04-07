@@ -5,6 +5,7 @@ export interface EthConfig {
   netmask: string;
   gw: string;
   nameserver: string;
+  server_mode:boolean;
 }
 
 export type EthGetConfigResponse = EthConfig;

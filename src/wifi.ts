@@ -38,7 +38,9 @@ interface Ap {
   ssid: string;
   is_open: boolean;
   enable: boolean;
-  range_extender: unknown;
+  range_extender: {
+    enable: boolean;
+  };
 }
 
 export type WifiGetConfigResponse = WifiConfig;

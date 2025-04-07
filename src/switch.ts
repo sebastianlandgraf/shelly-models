@@ -1,4 +1,4 @@
-import { Temperature } from './common.js';
+import { Aenergy, Temperature } from './common.js';
 
 export type SwitchGetConfigResponse = SwitchConfig;
 
@@ -18,13 +18,21 @@ export interface SwitchConfig {
   input_id: number;
   power_limit?: number | null;
   voltage_limit?: number | null;
+  autorecover_voltage_errors: boolean;
   current_limit?: number | null;
+  reverse:boolean;
 }
 
 export interface SwitchGetStatusResponse {
   id: number;
   output: boolean;
   source: string;
+  apower:number;
+  voltage: number;
+  freq:number;
+  current:number;
+  aenergy: Aenergy;
+  ret_aenergy: Aenergy;
   temperature: Temperature;
 }
 

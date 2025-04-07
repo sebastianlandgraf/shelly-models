@@ -16,15 +16,18 @@ export interface SysGetStatusResponse {
   restart_required: boolean;
   time: string;
   unixtime: number;
+  last_sync_ts: number;
   uptime: number;
   ram_size: number;
   ram_free: number;
+  ram_min_free: number;
   fs_size: number;
   fs_free: number;
   cfg_rev: number;
   kvs_rev: number;
   schedule_rev: number;
   webhook_rev: number;
+  btrelay_rev:number;
   available_updates:
     | EmptyObject
     | { stable?: { version: string }; beta?: { version: string } };
